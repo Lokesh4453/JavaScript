@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <script>
+        function myfunction(){
+            var x=document.getElementById("mycheck")
+            if(x.checked==true){
+                return x.checked=false;
+            }
+            else{
+                return x.checked=true;
+            }
+        }
+    </script>
+    <body>
+        CheckBox: <input type="checkbox" id="mycheck">
+        <p>Click the Check Box</p>
+        <button onclick="myfunction()">Click Me</button>
+</html>
